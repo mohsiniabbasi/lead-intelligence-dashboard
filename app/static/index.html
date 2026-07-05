@@ -135,6 +135,14 @@ async function loadLeads() {
   $(sel).addEventListener('input', loadLeads));
 $('#btn-export').addEventListener('click', () => window.location = '/api/export.csv');
 
+// Optional: pre-set filters from URL (?query=&fit=&min_score=) — handy for shareable views.
+(function initFromUrl(){
+  const q = new URLSearchParams(location.search);
+  if (q.get('query'))     $('#f-query').value = q.get('query');
+  if (q.get('fit'))       $('#f-fit').value   = q.get('fit');
+  if (q.get('min_score')) $('#f-min').value   = q.get('min_score');
+})();
+
 loadStats(); loadLeads();
 </script>
 </body>

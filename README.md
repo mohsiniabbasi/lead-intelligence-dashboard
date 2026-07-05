@@ -6,6 +6,15 @@ Source → enrich → score → deliver. Built as a portfolio demonstration of d
 
 ![status](https://img.shields.io/badge/build-demo-blue)
 
+## Screenshots
+| Overview | Qualified leads (filtered) |
+|---|---|
+| ![overview](screenshots/01-overview.png) | ![qualified](screenshots/02-qualified-filtered.png) |
+
+| Live search | Mobile |
+|---|---|
+| ![search](screenshots/03-search-saas.png) | ![mobile](screenshots/04-mobile.png) |
+
 ## What it does
 1. **Ingests** a list of companies (here: a synthetic dataset; in production: a client's approved feed or a public API).
 2. **Enriches** each record — sector, size band, ICP-fit label and a short "why it fits".
