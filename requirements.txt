@@ -1,0 +1,4 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+# Optional — only needed to enable LLM-written fit reasons (set ANTHROPIC_API_KEY):
+# anthropic>=0.40
